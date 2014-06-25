@@ -18,14 +18,6 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
@@ -33,15 +25,17 @@
 	<!-- Menu -->
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#home">TONI OSORIO | VINOS</a></h1>
+			<h1 class="logo"><a href="index.html#home">TONI OSORIO <br> VINOS</a></h1>
 			<i class="fa fa-times menu-close"></i>
 			<a href="#home" class="smoothScroll">Inicio</a>
 			<a href="#about" class="smoothScroll">Historia</a>
             <a href="#services" class="smoothScroll">Valores</a>
 			<a href="#portfolio" class="smoothScroll">Vinos</a>
 			<a href="#contact" class="smoothScroll">Contacto</a>
-			<a href="https://www.facebook.com/pages/Lo-Mur/637475672988692?ref=hl"><i class="fa fa-facebook"></i></a>
-			<a href="mailto: Syrah631@gmail.com"><i class="fa fa-envelope"></i></a>
+			<a href="https://twitter.com/LoMur2011"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/pages/Lo-Mur/637475672988692?ref=hl"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/profile/view?id=107359008&authType=NAME_SEARCH&authToken=JhhE&locale=es_ES&trk=tyah2&trkInfo=tarId%3A1403508480869%2Ctas%3Atoni%20osorio%2Cidx%3A1-1-1"><i class="fa fa-linkedin"></i></a>
+			<a href="#contact" class="smoothScroll"><i class="fa fa-envelope"></i></a>
 		</div>
 		
 		<!-- Menu button -->
@@ -53,7 +47,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1>TONI OSORIO VINOS</h1>
+					<!-- <h1>TONI OSORIO VINOS</h1> -->
 				</div>
 			</div><! --/row -->
 		</div><! --/container -->
@@ -158,26 +152,21 @@
 					<p>CONTACTO</p>
 					<p>Toni Osorio</p>
 					<p>
-						<small>Adreça falta!<br/>
-						Tarragona</small>
-					</p>
-					<p>
-						<small>Tel: +(34) 685 14 25 15<br/>
-						Mail: syrah631@gmail.com<br/>
-						LinkedIn: <a href="https://www.linkedin.com/in/toniosorio">Toni Osorio</a>
+						<small><i class="fa fa-mobile"> +(34) 685 14 25 15 </i><br/>
+						<i class="fa fa-envelope"> contacto@toniosorio.com </i><br/>
 					</p></small>
 			
 				</div>
 				
 				<div class="col-lg-6">
-					<form role="form">
+					<form role="form" id="ajax-contact" method="post" action="http://forms.brace.io/contacto@toniosorio.com">
 					  <div class="form-group">
-					    <label for="exampleInputName1">Nombre</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tu Nombre">
-					    <label for="exampleInputEmail1">Correo</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo">
-					    <label for="exampleInputText1">Mensaje</label>
-					    <textarea class="form-control" rows="3"></textarea>
+					    <label for="nombre">Nombre</label>
+					    <input type="nombre" class="form-control" id="Nombre" placeholder="Tu Nombre" autofocus required >
+					    <label for="correo">Correo</label>
+					    <input type="correo" class="form-control" id="Correo" placeholder="Tu Correo" required >
+					    <label for="mensaje">Mensaje</label>
+					    <textarea id="Mensaje" name="mensaje" class="form-control" rows="3" required ></textarea>
 					  </div>
 					  <button type="submit" class="btn btn-default">Envia</button>
 					</form>
